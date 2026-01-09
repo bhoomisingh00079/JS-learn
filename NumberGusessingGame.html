@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head><title>Number Guessing</title></head>
+<body>
+    <h3>Number Guessing Arena</h3>
+    <input type="number" id="guessInp" placeholder="Enter no. (1-10): ">
+    <button id="check-btn">Check</button>
+    <p id="result"></p>
+    <script>
+        let randomNum = Math.floor(Math.random() * 10) + 1;
+        document.getElementById("check-btn").onclick = function(){
+            let userGuess = Number(document.getElementById("guessInp").value);
+            let result = document.getElementById("result");
+
+            if(
+                userGuess < 1 || userGuess > 10 || isNaN(userGuess)
+            ){
+                result.innerText = "Please enter a valid number between 1 and 10.";
+            } else if(userGuess === randomNum){
+                result.innerText = "Congratulations! You guessed it right.";
+            } else if(userGuess < randomNum){
+                result.innerText = "Too low! Try again.";
+            } else{
+                result.innerText = "Too high! Try again.";
+            }
+            
+        }
+    </script>
+</body>

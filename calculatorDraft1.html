@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html><head>
+    <title>My calci</title>
+    <style>
+        button{
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+            font-size: 18px;
+        }
+        #btn-clear{
+            width: 160px;
+            margin: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Calculator</h3>
+    <div>
+        <button id="btn-1">1</button>
+        <button id="btn-2">2</button>
+        <button id="btn-3">3</button>
+        <button id="btn_+">+</button>
+    </div>
+    <div>
+        <button id="btn-4">4</button>
+        <button id="btn-5">5</button>
+        <button id="btn-6">6</button>
+        <button id="btn_-">-</button>
+    </div>
+    <div>
+        <button id="btn-7">7</button>
+        <button id="btn-8">8</button>
+        <button id="btn-9">9</button>
+        <button id="btn_*">*</button>
+    </div>
+    <div>
+        <button id="btn-0">0</button>
+        <button id="btn_.">.</button>
+        <button id="btn_=">=</button>
+        <button id="btn_/">/</button>
+    </div>
+    <div>
+        <button id="btn-clear">Clear</button>
+    </div>
+    <script>
+        let calculation = '';
+        document.getElementById("btn-1").onclick = function() {
+            calculation += '1';
+            console.log(calculation);
+        };
+        document.getElementById("btn-2").onclick = function() {
+            calculation += '2';
+            console.log(calculation);
+        };
+        document.getElementById("btn-3").onclick = function() {
+            calculation += '3';
+            console.log(calculation);
+        };
+        document.getElementById("btn_+").onclick = function() {
+            calculation += ' + ';
+            console.log(calculation);
+        };
+        document.getElementById("btn-4").onclick = function() {
+            calculation += '4';
+            console.log(calculation);
+        };
+        document.getElementById("btn-5").onclick = function() {
+            calculation += '5';
+            console.log(calculation);
+        };
+        document.getElementById("btn-6").onclick = function() {
+            calculation += '6';
+            console.log(calculation);
+        };
+        document.getElementById("btn_-").onclick = function() {
+            calculation += '-';
+            console.log(calculation);
+        };
+        document.getElementById("btn-7").onclick = function() {
+            calculation += '7';
+            console.log(calculation);
+        };
+        document.getElementById("btn-8").onclick = function() {
+            calculation += '8';
+            console.log(calculation);
+        };
+        document.getElementById("btn-9").onclick = function() {
+            calculation += '9';
+            console.log(calculation);
+        };
+        document.getElementById("btn_*").onclick = function() {
+            calculation += ' * ';
+            console.log(calculation);
+        };
+        document.getElementById("btn-0").onclick = function() {
+            calculation += '0';
+            console.log(calculation);
+        };
+        document.getElementById("btn_.").onclick = function() {
+            calculation += '.';
+            console.log(calculation);
+        };
+        document.getElementById("btn_=").onclick = function() {
+            result = eval(calculation);
+
+            calculation += ' = ';
+            console.log(calculation + result);
+
+        };
+        document.getElementById("btn_/").onclick = function() {
+            calculation += '/';
+            console.log(calculation);
+        };
+        document.getElementById("btn-clear").onclick = function() {
+            calculation = ' ';
+            console.log(calculation);
+        };
+
+    </script>
+</body>
+</html>
