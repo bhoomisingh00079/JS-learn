@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dice Roll Game</title>
+    </head>
+    <style>
+        #result{
+            font-size : 20px;
+            padding: 10px;
+        }
+    </style>
+    <body>
+        <h3>
+            Dice Roll Simulator 🎲
+        </h3>
+        <button id="roll-btn">Roll Dice</button>
+        <p id="result">Result: </p>
+    </body>
+    <script>
+        function rollDice(){
+            let dice = Math.floor(Math.random()*6) + 1;
+            console.log("Dice rolled: ",dice);
+            document.getElementById("result").innerText = "You rolled: " + dice;
+        }
+        document.getElementById("roll-btn").onclick = rollDice;
+    </script>
+</html>
