@@ -36,6 +36,26 @@ to strengthen fundamentals.
 
 ---
 
+### ✅ Day 3 – Dice Roll Simulator & Rock Paper Scissors Game
+
+**Dice Roll Simulator**
+- Click a button to roll a dice (1–6)
+- Result is displayed on the screen and logged in the console
+- Focus areas:
+  - `Math.random()` and `Math.floor()`
+  - Functions
+  - Basic JavaScript logic
+
+**Rock Paper Scissors Game**
+- User selects Rock, Paper, or Scissors
+- Computer makes a random choice
+- Game result (win / lose / tie) is shown using alerts
+- Focus areas:
+  - Random number generation
+  - Conditional logic
+  - Functions
+  - Event handling
+
 ## 🛠️ Technologies Used
 - JavaScript
 - HTML
