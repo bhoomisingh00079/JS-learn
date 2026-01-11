@@ -56,11 +56,25 @@ to strengthen fundamentals.
   - Functions
   - Event handling
 
+---
+
+### ✅ Day 4 – Rock Paper Scissors with Scoreboard
+- Upgraded the Rock Paper Scissors game
+- Added a scoreboard for Player vs Computer
+- Added reset functionality
+- Results are displayed on the UI instead of alerts
+- Focus areas:
+  - State management using variables
+  - Reusing existing game logic
+  - Updating the UI dynamically
+  - Functions and conditionals
+
+---
+
 ## 🛠️ Technologies Used
 - JavaScript
 - HTML
 - CSS (basic)
-
 ---
 
 ## 🎯 Goal of This Repository
