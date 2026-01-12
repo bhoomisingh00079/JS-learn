@@ -71,6 +71,17 @@ to strengthen fundamentals.
 
 ---
 
+### ✅ Day 5 – Random Quote Generator
+- Displays a random quote on button click
+- Quotes are stored in a JavaScript array
+- Focus areas:
+  - Arrays
+  - Random index generation
+  - Functions
+  - DOM updates
+
+---
+
 ## 🛠️ Technologies Used
 - JavaScript
 - HTML
