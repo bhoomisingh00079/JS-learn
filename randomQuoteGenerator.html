@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quote Generator</title>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <h3 id="instruction">Click the button bellow to generate Quote</h3>
+        <button id="quote-gen-btn">Generate quote</button>
+        <p id="show-quote"></p>
+    </body>
+    <script>
+        const my_quotes = [
+            `“When we strive to become better than we are, everything around us becomes better too.” —Paulo Coelho`,
+            `“Just one small positive thought in the morning can change your whole day.” —Dalai Lama`,
+            `“Motivation is a fire from within. If someone else tries to light that fire under you, chances are it will burn very briefly.” —Stephen R. Covey`,
+            `“I have discovered in life that there are ways of getting almost anywhere you want to go, if you really want to go.” - Langston Hughes`,
+            `“The secret of getting ahead is getting started. The secret of getting started is breaking your complex overwhelming tasks into small manageable tasks, and then starting on the first one.” —Mark Twain`,
+            `“One of the best pieces of advice I ever got was from a horse master. He told me to go slow to go fast. I think that applies to everything in life. We live as though there aren't enough hours in the day but if we do each thing calmly and carefully we will get it done quicker and with much less stress.” —Viggo Mortensen`,
+            `“The key is not to prioritize what's on your schedule, but to schedule your priorities.” —Stephen Covey`,
+            `"You were born to win, but to be a winner, you must plan to win, prepare to win, and expect to win." —Zig Ziglar`,
+            `“It is no good getting furious if you get stuck. What I do is keep thinking about the problem but work on something else” —Steven Hawking`,
+            `"Reflect on what you do in a day. You may have never realized how some simple, harmless activities rob you of precious time." —Vivek Naik`,
+            `“Don't judge each day by the harvest you reap but by the seeds that you plant.” —Robert Louis Stevenson`,
+            `"To practice any art, no matter how well or badly, is a way to make your soul grow. So do it." —Kurt Vonnegut`,
+            `"Creativity involves breaking out of expected patterns in order to look at things in a different way." —Edward de Bono`,
+            `“Create with the heart; build with the mind.” —Criss Jami`,
+            `“Have no fear of perfection, you'll never reach it” —Salvador Dali`,
+            `“We spend precious hours fearing the inevitable. It would be wise to use that time adoring our families, cherishing our friends and living our lives.” —Maya Angelou`,
+            `"When I was a boy and I would see scary things in the news, my mother would say to me, 'Look for the helpers. You will always find people who are helping.'" —Mister Rogers`,
+            `“In the depth of winter, I finally learned that there was in me an invincible summer.” —Albert Camus`,
+            `“The human capacity for burden is like bamboo – far more flexible than you'd ever believe at first glance.” —Jodi Picoult`,
+            `“Resilience is accepting your new reality, even if it's less good than the one you had before. You can fight it, you can do nothing but scream about what you've lost, or you can accept that and try to put together something that's good.” —Elizabeth Edwards`,
+            `“The oak fought the wind and was broken, the willow bent when it must and survived.” — Robert Jordan`,
+            `“The very least you can do in your life is figure out what you hope for. And the most you can do is live inside that hope. Not admire it from a distance but live right in it, under its roof.” ― Barbara Kingsolver`
+        ]
+
+        function randomQuote(){
+            let randomIndex = Math.floor(Math.random()*my_quotes.length);
+            let quote = my_quotes[randomIndex];
+            return quote;
+        }
+
+        document.getElementById("quote-gen-btn").onclick = function(){
+            document.getElementById("show-quote").innerText = randomQuote();
+        }
+    </script>
+</html>
