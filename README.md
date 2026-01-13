@@ -82,6 +82,26 @@ to strengthen fundamentals.
 
 ---
 
+### ✅ Day 6 – Character Counter & Random Color Generator
+
+**Character & Word Counter**
+- Counts characters and words in real time as the user types
+- Uses a textarea input for multi-line text
+- Focus areas:
+  - String handling
+  - Input events
+  - DOM updates
+
+**Random Color Generator**
+- Generates a random background color on button click
+- Displays the generated hex color code on the screen
+- Focus areas:
+  - Loops
+  - Strings
+  - DOM style manipulation
+
+---
+
 ## 🛠️ Technologies Used
 - JavaScript
 - HTML
