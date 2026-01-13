@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chracter Counter</title>
+    </head>
+    <style>
+        #input{
+            height: auto;
+            width: 300px;
+        }
+    </style>
+    <body>
+        <h3>Character counter</h3>
+        <h6>Type below the sentence or para for which u wanna know count of characters and total words</h6>
+        <textarea placeholder="type here" id="input"></textarea>
+        <div class="count">Chracters: <span id="char-count">0</span></div>
+        <div class="count">Words: <span id="word-count">0</span></div>
+    </body>
+    <script>
+        const textInput = document.getElementById("input")
+        const charCount = document.getElementById("char-count")
+        const wordCount = document.getElementById("word-count")
+
+        textInput.oninput = function(){
+            const text = textInput.value;
+            charCount.innerText = text.length;
+            const words = text.trim().split(/\s+/);
+            if (text.trim() === ""){
+                wordCount.innerText = 0;
+            } else {
+                wordCount.innerText = words.length;
+            }
+        }
+    </script>
+</html>

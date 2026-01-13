@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random color bg</title>
+    </head>
+    <body>
+        <h3>Random color generator 🎨</h3>
+        <button id="color-btn">Generate color</button>
+        <p id="color-code">Color: #ffffff</p>
+    </body>
+    <script>
+        const hexChars = "0123456789ABCDEF";
+
+        function generateColor(){
+        let color = "#";
+        for(let i=0;i<6;i++){
+            const index = Math.floor(Math.random()*hexChars.length);
+            color += hexChars[index];
+        }
+        document.body.style.backgroundColor = color;
+        document.getElementById("color-code").innerText = "Color: " + color;
+    }
+
+    document.getElementById("color-btn").onclick = generateColor;
+    </script>
+</html>
