@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>to-do-app</title>
+</head>
+<body>
+    <h3>Welcome to your to-do-list</h3>
+    <div>
+    <div>Task count:<span id="task-count">0</span></div>
+    <textarea id="input-area" placeholder="Enter task to add in list."></textarea>
+    </div>
+    <div>
+    <button id="add-btn">Add task</button>
+    </div>
+    <hr></hr>
+    <p id="list-display"></p>
+
+</body>
+<script>
+    const input_text = document.getElementById("input-area");
+    const listDisplay = document.getElementById("list-display");
+    const taskCount = document.getElementById("task-count");
+
+    let total_task = 0;
+
+    document.getElementById("add-btn").onclick = function (){
+        const task = input_text.value.trim();
+        if (task === ""){
+            return;
+        }
+        
+        const line = document.createElement("div");
+        
+
+        const taskText = document.createElement("span");
+        taskText.innerText = task;
+
+        const deleteBtn = document.createElement("button");
+        deleteBtn.innerText = "Delete";
+
+        deleteBtn.onclick = function (){
+            listDisplay.removeChild(line);
+            total_task--;
+            taskCount.innerText = total_task;
+        }
+
+        line.appendChild(taskText);
+        line.appendChild(deleteBtn);
+        listDisplay.appendChild(line);
+
+        total_task++;
+        taskCount.innerText = total_task;
+
+        input_text.value = ""
+}
+</script>
+</html>
