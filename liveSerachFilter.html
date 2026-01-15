@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Live-search-filter</title></head>
+    <body>
+        <h3>LIVE SEARCH FILTER</h3>
+        <input type="text" id="search-input" placeholder="Search items...">
+        <ul id="item-list">
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Orange</li>
+            <li>Grapes</li>
+            <li>Mango</li>
+            <li>Pineapples</li>
+        </ul>
+    </body>
+    <script>
+        const searchInput = document.getElementById("search-input");
+        const items = document.querySelectorAll("#item-list li");
+
+        searchInput.oninput = function (){
+            const searchText = searchInput.value.toLowerCase();
+
+            for (let i=0;i<items.length;i++){
+                const itemText = items[i].innerText.toLowerCase();
+
+                if(itemText.includes(searchText)){
+                    items[i].style.display = "list-item";
+                } else {
+                    items[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</html>

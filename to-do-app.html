@@ -2,6 +2,12 @@
 <html>
 <head>
     <title>to-do-app</title>
+    <style>
+        .completed {
+            text-decoration: line-through;
+            color: grey;
+        }
+    </style>
 </head>
 <body>
     <h3>Welcome to your to-do-list</h3>
@@ -31,6 +37,8 @@
         
         const line = document.createElement("div");
         
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
 
         const taskText = document.createElement("span");
         taskText.innerText = task;
@@ -38,12 +46,21 @@
         const deleteBtn = document.createElement("button");
         deleteBtn.innerText = "Delete";
 
+        checkbox.onchange = function(){
+            if (checkbox.checked){
+                taskText.classList.add("completed");
+            } else {
+                taskText.classList.remove("completed");
+            }
+        }
+
         deleteBtn.onclick = function (){
             listDisplay.removeChild(line);
             total_task--;
             taskCount.innerText = total_task;
         }
 
+        line.appendChild(checkbox)
         line.appendChild(taskText);
         line.appendChild(deleteBtn);
         listDisplay.appendChild(line);
