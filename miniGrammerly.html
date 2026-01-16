@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Grammarly</title>
+</head>
+<body>
+    <h3>Welcome to Text utility tool!</h3>
+    <textarea id="input-area" placeholder="Enter your text here" rows="6" cols="40"></textarea>
+    <div class="count-show">Character Count: <span id="char-count">0</span></div>
+    <div class="count-show">Word Count: <span id="word-count">0</span></div>
+    <button id="uppercase-btn">Uppercase</button>
+    <button id="lowercase-btn">Lowercase</button>
+    <button id="clear-btn">Clear</button>
+</body>
+<script>
+    const inputText = document.getElementById("input-area");
+    const charCount = document.getElementById("char-count");
+    const wordCount = document.getElementById("word-count");
+
+    const upperCase = document.getElementById("uppercase-btn");
+    const lowerCase = document.getElementById("lowercase-btn");
+    const clear = document.getElementById("clear-btn");
+
+    inputText.oninput = function (){
+        const text = inputText.value;
+        charCount.innerText = text.length;
+
+        const word = text.trim();
+        if (word === ""){
+            wordCount.innerText = 0;
+        } else {
+            wordCount.innerText = word.split(/\s+/).length;
+        }
+
+    };
+
+    upperCase.onclick = function(){
+        inputText.value = inputText.value.toUpperCase();
+        inputText.oninput();
+    };
+
+    lowerCase.onclick = function(){
+        inputText.value = inputText.value.toLowerCase();
+        inputText.oninput();
+    };
+
+    clear.onclick = function (){
+        inputText.value = "";
+        charCount.innerText = 0;
+        wordCount.innerText = 0;
+    };
+
+</script>
+</html>
