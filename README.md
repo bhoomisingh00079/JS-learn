@@ -208,3 +208,9 @@ Built a mini expense tracker as the final project of the challenge.
 This repository is part of my **#BuildInPublic** learning journey.
 
 More projects will be added as I continue learning 🚀
+---
+
+### 🎯 10 Days of JavaScript – Summary
+
+This challenge helped me build consistency and confidence with core JavaScript concepts by creating small, focused projects every day and gradually increasing complexity.
+
