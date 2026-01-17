@@ -102,6 +102,86 @@ to strengthen fundamentals.
 
 ---
 
+## ✅ Day 7 – To-Do List (Core Features)
+
+Built a basic to-do list application.
+
+**Features:**
+- Add tasks dynamically
+- Delete individual tasks
+- Live task counter
+
+**Concepts practiced:**
+- DOM manipulation
+- Event handling
+- Basic state management
+
+---
+
+## ✅ Day 8 – To-Do App Enhancement & Mini Project
+
+### 🔹 To-Do App Enhancement
+Enhanced the existing to-do app by adding task completion.
+
+**Features:**
+- Mark tasks as completed using checkboxes
+- Visual feedback for completed tasks
+- Task counter remains accurate
+
+**Concepts practiced:**
+- Checkbox input handling
+- Conditional UI updates
+- DOM manipulation
+
+### 🔹 Mini Project: Live Search Filter
+Built a small project to filter list items in real time.
+
+**Features:**
+- Filters items as the user types
+- Case-insensitive search
+
+**Concepts practiced:**
+- `oninput` event
+- String comparison
+- Dynamic show/hide of elements
+
+---
+
+## ✅ Day 9 – Text Utility Tool
+
+Built a text utility mini project combining multiple JavaScript concepts.
+
+**Features:**
+- Live character count
+- Live word count
+- Convert text to uppercase and lowercase
+- Clear text and reset counts
+
+**Concepts practiced:**
+- String methods
+- Input events
+- Conditional logic
+- DOM updates
+
+---
+
+## ✅ Day 10 – Expense Tracker (Final Project)
+
+Built a mini expense tracker as the final project of the challenge.
+
+**Features:**
+- Add expenses with name and amount
+- Delete individual expenses
+- Live total expense calculation
+
+**Concepts practiced:**
+- DOM creation and deletion
+- Number handling
+- Event-driven logic
+- Real-time UI updates
+
+---
+
 ## 🛠️ Technologies Used
 - JavaScript
 - HTML
