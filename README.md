@@ -203,10 +203,6 @@ Built a mini expense tracker as the final project of the challenge.
 - Focus on clarity, consistency, and honesty
 
 ---
-
-## 🔗 Connect
-This repository is part of my **#BuildInPublic** learning journey.
-
 More projects will be added as I continue learning 🚀
 ---
 
